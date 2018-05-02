@@ -6,13 +6,15 @@ function Game(){
     this.width=()=>{return pixi.screen.width;};
     this.height=()=>{return pixi.screen.height;};
     
-    this.init=function(){
-        
-    };
     
     this.getMS=()=>{
         return pixi.ticker.elapsedMS;
     };
+    
+    this.init=function(){
+        this.player=new Player();
+    };
+    
 }
 
 const game=new Game();
